@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HARIKRISHNA | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Header / Hero */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #7fdbca;
+      margin-bottom: 25px;
+    }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: #333;
+      margin-bottom: 25px;
+      /* Replace below URL with your actual profile image URL */
+      background-image: url(https://i.postimg.cc/sgkGyP6X/Whats-App-Image-2025-04-27-at-1-52-33-AM.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .btn-primary {
+      background-color: #1abc9c;
+      color: #121212;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #16a085;
+      color: #fff;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 20px;
+      border-top: 1px solid #151c81;
+    }
+    section h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    section p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-size: 1rem;
+      color: #ccc;
+      text-align: center;
+    }
+
+    /* About */
+    #about p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    #about .education {
+      font-style: italic;
+      color: #999;
+    }
+
+    /* Skills */
+    #skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill {
+      background-color: #222;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #1abc9c;
+      box-shadow: 0 0 8px rgba(26, 188, 156, 0.5);
+      transition: transform 0.3s ease;
+      cursor: default;
+      min-width: 100px;
+      text-align: center;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #1abc9c;
+    }
+
+    /* Projects */
+    #projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .project-card {
+      background-color: #358e9c;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+      transition: box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #e74c3c;
+    }
+    .project-card p {
+      color: #ccc;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .tech-stack {
+      font-style: italic;
+      color: #aaa;
+    }
+
+    /* Contact */
+    #contact p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .contact-button {
+      background-color: #1abc9c;
+      color: #121212;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      min-width: 140px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .contact-button:hover {
+      background-color: #16a085;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .skill {
+        min-width: 80px;
+        padding: 10px 15px;
+      }
+      .project-card {
+        max-width: 100%;
+      }
+      .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-button {
+        min-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-pic" aria-label="Profile picture of Kunduri Harikrishna"></div>
+    <h1>Kunduri Harikrishna</h1>
+    <p> ASPPIRING COMPUTER SCIENCE AND ENGINEERING PROFESSIONAL | JAVA | HTML5 | CSS | JAVA SCRIPT</p>
+    <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+      Explore My Work
+    </button>
+  </header>
+
+  <main class="container">
+
+    <section id="about" aria-label="About section">
+      <h2>About Me</h2>
+      <p>
+        I am Kunduri Harikrishna, an aspiring computer science and enginerering with a Bachelor of Technology degree from Ramireddy Subbiramireddy Engineering College (Class of 2025). I am passionate about leveraging my expertise in java, sql, and web techhnologies to solve complex problems and contribute to innovative technology solutions. My goal is to join a dynamic organization where I can apply my technical skills, grow professionally, and make a meaningful impact.
+      </p>
+      <p class="education">Bachelor of Technology (B.Tech), Ramireddy Subbiramireddy Engineering College — 2025</p>
+    </section>
+
+    <section id="skills" aria-label="Skills section">
+      <h2>Skills</h2>
+      <div class="skill">core java</div>
+      <div class="skill">html</div>
+      <div class="skill">css</div>
+      <div class="skill">java script</div>
+    </section>
+
+    <section id="projects" aria-label="Projects section">
+      <h2>Projects</h2>
+      <article class="project-card" tabindex="0">
+        <h3>Adaptive monitoring for early stage ransomeware detection via behaviour and network traffic analysis</h3>
+        <p>
+          This project involves developing an adaptive system to detect ransomware by analyzing network traffic. It simulates malware installation and demonstrates the ransomware’s behavior in corrupting system files. The goal is to improve early detection techniques to safeguard computer systems against evolving ransomware threats.
+        </p>
+        <p class="tech-stack">Technologies used: Python,html,css,javascript</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-label="Contact section">
+      <h2>Get in Touch</h2>
+      <p>Feel free to reach out for collaborations, inquiries, or opportunities.</p>
+      <div class="contact-buttons">
+        <a href="mailto:k3361361902@gmail.com" class="contact-button" aria-label="Send email to Kunduri Harikrishna">Email Me</a>
+        <a href="tel:+919100948210" class="contact-button" aria-label="Call Kunduri Harikrishna">Call Me</a>
+        <a href="https://www.linkedin.com/in/kunduri-harikrishna-91b55934b" target="_blank" rel="noopener noreferrer" class="contact-button" aria-label="Visit LinkedIn profile of Kunduri Harikrishna">Connect on LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
